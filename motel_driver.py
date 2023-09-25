@@ -17,7 +17,7 @@ class Tenet:
     
 #using johnson trotter algo to make permutation of all room number
 #1-16, -1... b/c there is no 13, 
-#occupied and vaccant status
+#occupied and vaccant statush
 
 # print("foo")
 R103 = Tenet('Joe', "103", 95)
