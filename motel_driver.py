@@ -4,7 +4,7 @@
 
 class Tenet:
     
-    #creates a new variable with attrivutes of guest name, room number and price
+    #creates a new variable with attributes of guest name, room number and price
     #tenet constructor
     def __init__(self, guest, room, price):
         self.guest = guest
@@ -15,10 +15,9 @@ class Tenet:
         print("\ntenet:", self.guest, "\nroom:", self.room, "\nprice:", self.price)
         
     
-
-        
-        
-    
+#using johnson trotter algo to make permutation of all room number
+#1-16, -1... b/c there is no 13, 
+#occupied and vaccant status
 
 # print("foo")
 R103 = Tenet('Joe', "103", 95)
