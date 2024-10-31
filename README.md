@@ -1,4 +1,4 @@
 # PalHomeProj
 private projects not related to uni
--P1: MyMotel
--P2: Referbish AbsoluteZero Technique
+-Project_1: MyMotel
+-Project_2: Referbish AbsoluteZero Technique
