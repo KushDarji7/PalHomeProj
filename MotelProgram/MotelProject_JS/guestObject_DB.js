@@ -1,4 +1,4 @@
-const tenet = {
+const tenetobject = {
   rooms: [
     {
       roomNumber: 101,
@@ -271,6 +271,7 @@ const tenet = {
       roomNotes: "none",
     },
   ],
+  // function with intenet object that allows user to set the values of the room
   setRoom: (
     roomNumber,
     tenetName,
@@ -303,5 +304,5 @@ const tenet = {
   },
 };
 
-console.log(tenet.printRooms());
-// console.log(tenet.openRooms());
+console.log(tenetobject.printRooms());
+// console.log(tenetobject.openRooms());
