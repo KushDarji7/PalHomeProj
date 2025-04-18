@@ -4,6 +4,9 @@ the Repo establishes projects, mini programs, and recreational code for studying
 
 PalHomeProjects
   personal projects that aim to imporove, enviroment/ life
+  
+  private projects
+      - Motel Project
 
 Webleno
   Javascript test grounds

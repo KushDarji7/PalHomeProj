@@ -1,0 +1,7 @@
+
+.vscode
+.hintrc
+
+
+# secure data that should not be leaked obvi
+guestObject_DB.js
