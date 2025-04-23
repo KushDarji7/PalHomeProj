@@ -80,41 +80,44 @@ transactions = () => {
   console.log("Vergil $: No Transaction.");
 };
 
-const vacantRooms = () => {
+vacantRooms = () => {
   //1. prints out the vacant rooms by accessing refrence to the tempMotelRoomsDB
   //2. read values and keys of guest tempMotelRoomsDBs that have been put into a array of vacant rooms and non vacant rooms,
   // reads/prints room number, roomStatus
   // returns room numbers
-  if (roomStatus == vacant) {
-    // add to vaccant room # to vaccant rooms array
+  console.log();
+  console.log("Vergil $:Printing out all rooms\n");
+  for (const unitRooms in tempMotelRoomsDB.primeRooms) {
+    if (tempMotelRoomsDB.primeRooms[unitRooms].roomStatus == "vacant") {
+      // add to vaccant room # to vaccant rooms array
+      console.log(
+        tempMotelRoomsDB.primeRooms[unitRooms].roomNumber,
+        tempMotelRoomsDB.primeRooms[unitRooms].roomStatus
+      )
+    }
+    
   }
+  return;
 };
 
 listRooms = () => {
+  // here the for loop variable will itterate the 'unitRooms' for value in DB: key is 1st degree child in primeRooms value
   console.log();
   console.log("Vergil $:Printing out all rooms\n");
-
-  //issue reading out from db need to know syntax and concepts
-  // for each
-
-  // here the for loop variable will itterate the '101' for each value: key 1st degree child in prime rooms key
   for (const unitRooms in tempMotelRoomsDB.primeRooms) {
-    
     console.log(
       tempMotelRoomsDB.primeRooms[unitRooms].roomNumber,
       tempMotelRoomsDB.primeRooms[unitRooms].tenetName
     );
   }
-    
-  
-
-  return;
 };
 
-const nextDueDate = () => {
-  // retrive New due date
+
+const nextDueDate = (unitRooms) => {
+  // retrive New due date of specified Unit Room Number
   // sets the next due date of mm/dd/yy/hh:mm
   // so how can we do that whilst using the days of the month, some days are 30/31/28 etc so the due dates are charged respectivly
+
 };
 
 const chargeBalance = (roomNumber, chargeRate) => {};
@@ -150,9 +153,12 @@ const motelHelp = () => {
 // motelHelp();
 // dailyReport();
 
+//further testing for functinos before production
+// listRooms();
+
 //DEBUG FUNCTIONS
 
-// vacantRooms();
+vacantRooms();
+
 // deleteTenet(201)
 
-listRooms();
