@@ -1,4 +1,3 @@
-
 // DB
 
 const tenetObject = {
@@ -7,11 +6,11 @@ const tenetObject = {
       roomNumber: 101,
       roomStatus: "occupied",
       tenetName: "Brat Willus",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -19,11 +18,11 @@ const tenetObject = {
       roomNumber: 102,
       roomStatus: "occupied",
       tenetName: "Rain Sacaro",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -31,11 +30,11 @@ const tenetObject = {
       roomNumber: 103,
       roomStatus: "occupied",
       tenetName: "Joe Steve",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -43,11 +42,11 @@ const tenetObject = {
       roomNumber: 104,
       roomStatus: "occupied",
       tenetName: "Lard Incel",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -67,11 +66,11 @@ const tenetObject = {
       roomNumber: 106,
       roomStatus: "occupied",
       tenetName: "Garry Kerry",
-      roomRate: 350.00,
-      roomBalance: 410.00,
-      balanceDueDate: '1.2.24',
+      roomRate: 350.0,
+      roomBalance: 410.0,
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -79,11 +78,11 @@ const tenetObject = {
       roomNumber: 107,
       roomStatus: "occupied",
       tenetName: "Donny Yen",
-      roomRate: 278.00,
+      roomRate: 278.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -91,11 +90,11 @@ const tenetObject = {
       roomNumber: 108,
       roomStatus: "occupied",
       tenetName: "Tim Smith",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -103,11 +102,11 @@ const tenetObject = {
       roomNumber: 109,
       roomStatus: "occupied",
       tenetName: "Lawrence Stroll",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -115,11 +114,11 @@ const tenetObject = {
       roomNumber: 110,
       roomStatus: "vacant",
       tenetName: "Raiz Common",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -127,11 +126,11 @@ const tenetObject = {
       roomNumber: 111,
       roomStatus: "occupied",
       tenetName: "Don Sim",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -139,24 +138,23 @@ const tenetObject = {
       roomNumber: 112,
       roomStatus: "occupied",
       tenetName: "Dave Attenborough",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
-    113: {},
     114: {
       roomNumber: 114,
       roomStatus: "occupied",
       tenetName: "M A",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -164,11 +162,11 @@ const tenetObject = {
       roomNumber: 115,
       roomStatus: "occupied",
       tenetName: "Taylor McKenzie",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -176,11 +174,11 @@ const tenetObject = {
       roomNumber: 116,
       roomStatus: "occupied",
       tenetName: "Jeff Doug",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -188,11 +186,11 @@ const tenetObject = {
       roomNumber: 201,
       roomStatus: "occupied",
       tenetName: "Juan",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -202,9 +200,9 @@ const tenetObject = {
       tenetName: null,
       roomRate: 95.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -212,11 +210,11 @@ const tenetObject = {
       roomNumber: 203,
       roomStatus: "occupied",
       tenetName: "Dairy Winny",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -224,11 +222,11 @@ const tenetObject = {
       roomNumber: 204,
       roomStatus: "occupied",
       tenetName: "Len Phil",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -236,11 +234,11 @@ const tenetObject = {
       roomNumber: 205,
       roomStatus: "occupied",
       tenetName: "Jerry Jackson",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -250,9 +248,9 @@ const tenetObject = {
       tenetName: "Valery Broials",
       roomRate: "undefined",
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -260,11 +258,11 @@ const tenetObject = {
       roomNumber: 207,
       roomStatus: "occupied",
       tenetName: "Rich Brain",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -272,11 +270,11 @@ const tenetObject = {
       roomNumber: 208,
       roomStatus: "occupied",
       tenetName: "Flamingo Vector",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -284,11 +282,11 @@ const tenetObject = {
       roomNumber: 209,
       roomStatus: "occupied",
       tenetName: "guest 9",
-      roomRate: 290.00,
+      roomRate: 290.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -296,11 +294,11 @@ const tenetObject = {
       roomNumber: 210,
       roomStatus: "occupied",
       tenetName: "Rachel Colson",
-      roomRate: 278.00,
+      roomRate: 278.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -310,9 +308,9 @@ const tenetObject = {
       tenetName: "Rebecca Chavez",
       roomRate: "undefined",
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -320,11 +318,11 @@ const tenetObject = {
       roomNumber: 212,
       roomStatus: "occupied",
       tenetName: "guest 12",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -332,11 +330,11 @@ const tenetObject = {
       roomNumber: 214,
       roomStatus: "occupied",
       tenetName: "Marry C",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -344,11 +342,11 @@ const tenetObject = {
       roomNumber: 215,
       roomStatus: "occupied",
       tenetName: "Nick Y",
-      roomRate: 350.00,
+      roomRate: 350.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
@@ -356,17 +354,16 @@ const tenetObject = {
       roomNumber: 216,
       roomStatus: "vacant",
       tenetName: "Yuki Tsuno",
-      roomRate: 95.00,
+      roomRate: 95.0,
       roomBalance: 0.0,
-      balanceDueDate: '1.2.24',
+      balanceDueDate: "1.2.24",
       guestName: "undefined",
-      tenetDocuments: 'file.pdf',
+      tenetDocuments: "file.pdf",
       roomService: "none",
       roomNotes: "none",
     },
-  }
+  },
 };
-
 
 // ! ISSUE
 // make this apart of a class MotelProgram
@@ -400,15 +397,14 @@ vacantRooms = () => {
   // perhaphs refractor to use simple truthy/falsy values instead of strings like vacant or occupid, refractoring DB will be necessary, not using binary values could allow chekcs for room status: like broken, or on change... etc
   console.log();
   console.log("Vergil $:Printing out all rooms\n");
-  for (const unitRooms in tenetObject.primeRooms) {
+  for (let unitRooms in tenetObject.primeRooms) {
     if (tenetObject.primeRooms[unitRooms].roomStatus == "vacant") {
       // add to vacant room # to vacant rooms array
       console.log(
         tenetObject.primeRooms[unitRooms].roomNumber,
         tenetObject.primeRooms[unitRooms].roomStatus
-      )
+      );
     }
-    
   }
   return;
 };
@@ -417,37 +413,47 @@ listRooms = () => {
   // here the for loop variable will itterate the 'unitRooms' for value in DB: key is 1st degree child in primeRooms value
   console.log();
   console.log("Vergil $:Printing out all rooms\n");
-  for (const unitRooms in tenetObject.primeRooms) {
+  for (let unitRooms in tenetObject.primeRooms) {
     console.log(
-      tenetObject.primeRooms[unitRooms].roomNumber,
-      tenetObject.primeRooms[unitRooms].tenetName
+      "Room #" +
+        tenetObject.primeRooms[unitRooms].roomNumber +
+        " : " +
+        tenetObject.primeRooms[unitRooms].tenetName
     );
   }
 };
-
 
 const nextDueDate = (unitRooms) => {
   // retrive New due date of specified Unit Room Number
   // sets the next due date of mm/dd/yy/hh:mm
   // so how can we do that whilst using the days of the month, some days are 30/31/28 etc so the due dates are charged respectivly
-
 };
 
-
-roomBalance = (roomNumber) => {
+let roomBalance= (roomNumber) => {
   //access motel room DB, checks the key of the room# and returns value of the key: roomBalance
+  console.log(
+    "Room #" +
+    tenetObject.primeRooms[roomNumber].roomNumber +
+    " : Balance $" +
+    tenetObject.primeRooms[roomNumber].roomBalance
+  );
+};
+
+let allBalance = () => {
+  //as function name prints out all rentable rooms balance, so this will not print rooms that are written as null due to no chantge 
 
   for (const unitRooms in tenetObject.primeRooms) {
-    console.log(
-      "Room # " + 
-      tenetObject.primeRooms[unitRooms].roomNumber + 
-      "\nBalance $ " + 
-      tenetObject.primeRoom[unitRooms].roomBalance
+    if (tenetObject.primeRooms[unitRooms].roomBalance !== null) {
+      console.log(
+        "Room #" +
+        tenetObject.primeRooms[unitRooms].roomNumber +
+        " : Balance $" +
+        tenetObject.primeRooms[unitRooms].roomBalance
+      );
       
-    );
-    
+    }
   }
-};
+}
 
 // WRITE METHODS
 addTenet = (roomNumber, newtenetName, roomRate) => {};
@@ -456,25 +462,24 @@ deleteTenet = (roomNumber, newName) => {
   tenetObject[roomNumber[tenetName]] = newName;
 };
 
-tenetCheckOut =(roomNumber) => {
+tenetCheckOut = (roomNumber) => {
   // similar to delete but scrubs entire primeRoom[unitRoom]
   // 1. accepts room number attribute
   //2. prints out prime room and current contents in database
-  //3. input prompt to confirm scrub of unitRoom# 
+  //3. input prompt to confirm scrub of unitRoom#
   //4. prints out current contents of Unit Room # and related key value pairs of specified object
   //5. scrubs relative information not including roomNumber(applicable values of key),
   //6 prints the unitRoom specified by the function parameter, to show it has been scrubbed
-  
-  console.log( "Room for CheckOut");
-  console.log(tenetObject.primeRooms[roomNumber]);
-  
-  // ..
-}
 
+  console.log("Room for CheckOut");
+  console.log(tenetObject.primeRooms[roomNumber]);
+
+  // ..
+};
 
 // add amount charged to current balance
 chargeBalance = (roomNumber, chargeRate) => {
-  tenetObject.roomNumber
+  tenetObject.roomNumber;
 };
 
 //HELP functions
@@ -487,16 +492,15 @@ const motelHelp = () => {
 
 // MAIN CLASS FUNCTIONS !
 
-
 //further testing for functions before production !
 // motelHelp();
 // dailyReport();
 // listRooms();
 // vacantRooms();
+// roomBalance(101);
 
 //DEBUG FUNCTIONS !
-tenetCheckOut(101);
-
+allBalance();
+// tenetCheckOut(101);
 
 // deleteTenet(201)
-
