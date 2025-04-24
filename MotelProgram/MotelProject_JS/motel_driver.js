@@ -423,37 +423,63 @@ listRooms = () => {
   }
 };
 
-const nextDueDate = (unitRooms) => {
-  // retrive New due date of specified Unit Room Number
-  // sets the next due date of mm/dd/yy/hh:mm
-  // so how can we do that whilst using the days of the month, some days are 30/31/28 etc so the due dates are charged respectivly
+dueDate = (unitRooms) => {
+  // retrive New due date of specified Unit Room Number as due date is set in object-class
+
+  console.log(
+    "Room #" +
+      tenetObject.primeRooms[unitRooms].roomNumber +
+      " : \"" +
+      tenetObject.primeRooms[unitRooms].tenetName +
+      "\"\nBalance $" +
+      tenetObject.primeRooms[unitRooms].roomBalance +
+      " DueDate : " +
+      tenetObject.primeRooms[unitRooms].balanceDueDate
+  );
 };
 
-let roomBalance= (roomNumber) => {
+allDueDates = () => {
+  for (const unitRooms in tenetObject.primeRooms) {
+    if (tenetObject.primeRooms[unitRooms].roomStatus !== "No Change") {
+      console.log(
+        "Room #" +
+          tenetObject.primeRooms[unitRooms].roomNumber +
+          " : \"" +
+          tenetObject.primeRooms[unitRooms].tenetName +
+          "\"\nBalance $" +
+          tenetObject.primeRooms[unitRooms].roomBalance +
+          " DueDate : " +
+          tenetObject.primeRooms[unitRooms].balanceDueDate +
+          "\n______________________________"
+      );
+    }
+  }
+};
+
+let roomBalance = (roomNumber) => {
   //access motel room DB, checks the key of the room# and returns value of the key: roomBalance
   console.log(
     "Room #" +
-    tenetObject.primeRooms[roomNumber].roomNumber +
-    " : Balance $" +
-    tenetObject.primeRooms[roomNumber].roomBalance
+      tenetObject.primeRooms[roomNumber].roomNumber +
+      " : Balance $" +
+      tenetObject.primeRooms[roomNumber].roomBalance
   );
 };
 
 let allBalance = () => {
-  //as function name prints out all rentable rooms balance, so this will not print rooms that are written as null due to no chantge 
+  //as function name prints out all rentable rooms balance, so this will not print rooms that are written as null due to no chantge
 
   for (const unitRooms in tenetObject.primeRooms) {
     if (tenetObject.primeRooms[unitRooms].roomBalance !== null) {
       console.log(
         "Room #" +
-        tenetObject.primeRooms[unitRooms].roomNumber +
-        " : Balance $" +
-        tenetObject.primeRooms[unitRooms].roomBalance
+          tenetObject.primeRooms[unitRooms].roomNumber +
+          " : Balance $" +
+          tenetObject.primeRooms[unitRooms].roomBalance
       );
-      
     }
   }
-}
+};
 
 // WRITE METHODS
 addTenet = (roomNumber, newtenetName, roomRate) => {};
@@ -487,7 +513,15 @@ chargeBalance = (roomNumber, chargeRate) => {
 const motelHelp = () => {
   // list commands
   console.log("\nHelpful Commands...");
-  console.log(" dailyReport()\n", "listRooms()\n", "vacantRooms()\n");
+  console.log(
+    " dailyReport()\n",
+    "listRooms()\n",
+    "vacantRooms()\n",
+    "roomBalance(#101 - #201)\n",
+    "allBalance()",
+    "dueDate(#101 - #201)\n",
+    "allDueDates()\n"
+  );
 };
 
 // MAIN CLASS FUNCTIONS !
@@ -498,9 +532,12 @@ const motelHelp = () => {
 // listRooms();
 // vacantRooms();
 // roomBalance(101);
+// allBalance();
+// dueDate(106);
+// allDueDates();
 
 //DEBUG FUNCTIONS !
-allBalance();
+
 // tenetCheckOut(101);
 
 // deleteTenet(201)
