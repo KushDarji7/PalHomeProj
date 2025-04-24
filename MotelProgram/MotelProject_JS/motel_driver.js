@@ -367,6 +367,7 @@ const tenetObject = {
 
 // ! ISSUE
 // make this apart of a class MotelProgram
+//use getters and setters instead of retriving stright from DB
 
 // System Variables
 const currentDate = new Date();
@@ -396,7 +397,7 @@ vacantRooms = () => {
   // returns room numbers
   // perhaphs refractor to use simple truthy/falsy values instead of strings like vacant or occupid, refractoring DB will be necessary, not using binary values could allow chekcs for room status: like broken, or on change... etc
   console.log();
-  console.log("Vergil $:Printing out all rooms\n");
+  console.log("Vergil $:Printing out all vacant rooms\n");
   for (let unitRooms in tenetObject.primeRooms) {
     if (tenetObject.primeRooms[unitRooms].roomStatus == "vacant") {
       // add to vacant room # to vacant rooms array
@@ -425,13 +426,14 @@ listRooms = () => {
 
 dueDate = (unitRooms) => {
   // retrive New due date of specified Unit Room Number as due date is set in object-class
-
+  console.log();
+  console.log(`Vergil $:Printing out ${unitRoom} Due Date\n`);
   console.log(
     "Room #" +
       tenetObject.primeRooms[unitRooms].roomNumber +
-      " : \"" +
+      ' : "' +
       tenetObject.primeRooms[unitRooms].tenetName +
-      "\"\nBalance $" +
+      '"\nBalance $' +
       tenetObject.primeRooms[unitRooms].roomBalance +
       " DueDate : " +
       tenetObject.primeRooms[unitRooms].balanceDueDate
@@ -439,14 +441,16 @@ dueDate = (unitRooms) => {
 };
 
 allDueDates = () => {
+  console.log();
+  console.log(`Vergil $:Printing out Due Date\n`);
   for (const unitRooms in tenetObject.primeRooms) {
     if (tenetObject.primeRooms[unitRooms].roomStatus !== "No Change") {
       console.log(
         "Room #" +
           tenetObject.primeRooms[unitRooms].roomNumber +
-          " : \"" +
+          ' : "' +
           tenetObject.primeRooms[unitRooms].tenetName +
-          "\"\nBalance $" +
+          '"\nBalance $' +
           tenetObject.primeRooms[unitRooms].roomBalance +
           " DueDate : " +
           tenetObject.primeRooms[unitRooms].balanceDueDate +
@@ -458,6 +462,8 @@ allDueDates = () => {
 
 let roomBalance = (roomNumber) => {
   //access motel room DB, checks the key of the room# and returns value of the key: roomBalance
+  console.log();
+  console.log(`Vergil $:Printing out ${roomNumber} balance.\n`);
   console.log(
     "Room #" +
       tenetObject.primeRooms[roomNumber].roomNumber +
@@ -468,7 +474,8 @@ let roomBalance = (roomNumber) => {
 
 let allBalance = () => {
   //as function name prints out all rentable rooms balance, so this will not print rooms that are written as null due to no chantge
-
+  console.log();
+  console.log(`Vergil $:Printing out all Balance's\n`);
   for (const unitRooms in tenetObject.primeRooms) {
     if (tenetObject.primeRooms[unitRooms].roomBalance !== null) {
       console.log(
@@ -527,14 +534,14 @@ const motelHelp = () => {
 // MAIN CLASS FUNCTIONS !
 
 //further testing for methods before production !
-// motelHelp();
-// dailyReport();
+motelHelp();
+dailyReport();
 // listRooms();
-// vacantRooms();
+vacantRooms();
 // roomBalance(101);
-// allBalance();
+allBalance();
 // dueDate(106);
-// allDueDates();
+allDueDates();
 
 //DEBUG FUNCTIONS !
 
