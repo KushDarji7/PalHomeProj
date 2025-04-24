@@ -526,7 +526,7 @@ const motelHelp = () => {
 
 // MAIN CLASS FUNCTIONS !
 
-//further testing for functions before production !
+//further testing for methods before production !
 // motelHelp();
 // dailyReport();
 // listRooms();
