@@ -1,5 +1,6 @@
 // DB
 
+// we can create this in to a list of array objects
 const tenetObject = {
   primeRooms: {
     101: {
@@ -407,7 +408,7 @@ vacantRooms = () => {
       );
     }
   }
-  return;
+
 };
 
 listRooms = () => {
