@@ -12,7 +12,7 @@ class Tenet:
         self.price = price
         self.note = note
     
-    def retrive_tenet(self):
+    def retrieve_tenet(self):
         print("\ntenet:", self.guest, "\nroom:", self.room, "\nprice: $", self.price)
         
     def addTenet(self):
@@ -29,10 +29,10 @@ class Tenet:
 
 # print("foo")
 R103 = Tenet('103', "Joe Cruz", 290, "this is the OG him self, cuban \'mafia\' man")
-R103.retrive_tenet()
+R103.retrieve_tenet()
 
 # print("bar")
 R105 = Tenet('105', "STORAGE", 'null', "NO CHANGE, utility room")
-R105.retrive_tenet()
+R105.retrieve_tenet()
         
         
