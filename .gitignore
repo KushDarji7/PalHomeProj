@@ -2,7 +2,6 @@
 .vscode
 
 
-
 # secure data that should not be leaked obvi
-guestObject_DB.js
-tempCodeRunnerFile.js
+MotelProgram\MotelProject_JS\guestObject_DB.js
+./guestObject_DB.js
