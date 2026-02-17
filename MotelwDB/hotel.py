@@ -2,6 +2,8 @@ from tkinter import *
 from PIL import Image, ImageTk
 from PIL.Image import Resampling
 
+from customer import Customer_Win
+
 
 class HotelManagementSystem:
     # constructor
@@ -68,7 +70,7 @@ class HotelManagementSystem:
 
         cust_btn = Button(
             button_frame,
-            text="CUSTOMER",
+            text="CUSTOMER",command=self.customer_details,
             width=18,
             font=("times new roman", 14, "bold"),
             bg="black",
@@ -154,6 +156,10 @@ class HotelManagementSystem:
         lblimg = Label(self.root, image=self.photoimg5, bd=4, relief=RIDGE)
         lblimg.place(x=0, y=635, width=214, height=220)
 
+
+    def customer_details(self):
+        self.new_window = Toplevel(self.root)
+        self.app = Customer_Win(self.new_window)
 
 # call object for window UI instantiating the object
 if __name__ == "__main__":
