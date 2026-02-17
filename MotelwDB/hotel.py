@@ -22,12 +22,12 @@ class HotelManagementSystem:
 
         # logo =============================================================
         img2 = Image.open("./images/hunterLicenseBack.jpg")
-        img2 = img2.resize((180, 180), Resampling.LANCZOS)
+        img2 = img2.resize((214, 180), Resampling.LANCZOS)
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
         # label for image, and location in root window
         lblimg = Label(self.root, image=self.photoimg2, bd=4, relief=RIDGE)
-        lblimg.place(x=0, y=0, width=180, height=180)
+        lblimg.place(x=0, y=0, width=214, height=180)
 
         # Title  ===========================================================
         lbl_title = Label(
@@ -125,6 +125,34 @@ class HotelManagementSystem:
             cursor="hand1",
         )
         logout_btn.grid(row=4, column=0, pady=1)
+
+        # right side image =======================================================
+
+        img3 = Image.open("./images/firelink shrine wallpaper.jpg")
+        img3 = img3.resize((1225, 680), Resampling.LANCZOS)
+        self.photoimg3 = ImageTk.PhotoImage(img3)
+
+        # label for image, and location in root window
+        lblimg = Label(self.root, image=self.photoimg3, bd=4, relief=RIDGE)
+        lblimg.place(x=215, y=180, width=1225, height=680)
+
+        # bottom image   =======================================================
+
+        img4 = Image.open("./images/Oddtaxi oddkawa tax iart.jpg")
+        img4 = img4.resize((214, 214), Resampling.LANCZOS)
+        self.photoimg4 = ImageTk.PhotoImage(img4)
+
+        # label for image, and location in root window
+        lblimg = Label(self.root, image=self.photoimg4, bd=4, relief=RIDGE)
+        lblimg.place(x=0, y=421, width=214, height=214)
+
+        img5 = Image.open("./images/cowboybebopWp.png")
+        img5 = img5.resize((214, 220), Resampling.LANCZOS)
+        self.photoimg5 = ImageTk.PhotoImage(img5)
+
+        # label for image, and location in root window
+        lblimg = Label(self.root, image=self.photoimg5, bd=4, relief=RIDGE)
+        lblimg.place(x=0, y=635, width=214, height=220)
 
 
 # call object for window UI instantiating the object
