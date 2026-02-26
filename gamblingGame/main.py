@@ -17,9 +17,9 @@ MIN_BET = 1
 SLOT_ROWS = 3
 SLOT_COLS = 3
 
-symbol_count = {"🍑": 2, "🃏": 3, "💣": 6, "🍒": 8}
+symbol_count = {"💖": 2, "🍑": 2.5, "🃏": 3, "💣": 6, "🍒": 8}
 
-symbol_value = {"🍑": 5, "🃏": 4, "💣": 3, "🍒": 2}
+symbol_value = {"💖": 6, "🍑": 5, "🃏": 4, "💣": 3, "🍒": 2}
 
 LINE_MULTIPLIER = {
         1: 1,
@@ -44,11 +44,11 @@ def weighted_spin( symbols):
 """
         WIN CALCULATIONS
 """
-
-def check_winnings(columns, lines, bet, values, jackpot):
+# def check_winnings(columns, lines, bet, values, jackpot):
+def check_winnings(columns, lines, bet, values):
     winnings = 0
     winning_lines = []
-    
+
     # if one line is betted, each row will be checked dynamically per number of lines being betted on
     for line in range(lines):
         # going down the first column, then second, then third, and so on until the number of lines being betted on is reached
