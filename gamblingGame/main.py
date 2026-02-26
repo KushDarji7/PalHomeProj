@@ -131,6 +131,8 @@ def get_bet():
             print("Please enter a number.")
     return amount
 
+# scalable change
+# def play_round(balance, rows, cols, symbols, values):
 def play_round(balance):
 
     lines = get_num_of_lines()
@@ -159,16 +161,30 @@ def play_round(balance):
     print(f"You won on lines\n    ", *winning_lines)
 
     return winnings - total_bet
+    """
+    scalable return
+    return {
+    "slots": slots,
+    "winnings": winnings,
+    "winning_lines": winning_lines
+    "net": winnings - total_bet
+    }
+    """
 
 def main():
     
     balance = deposit()
     while True:
         print(f"Current Balance: $ {balance}")
-        spin = input("Press enter to bet \n(q to quit).")
-        if spin == "q":
+        if balance <= 0:
+            print(f"you have no more money to bet,\n")
+            print(f"You plundered a total of \n     ${balance} \n thank you for playing!\n GAMBLE RESPONSIBLY! ")
             break
-        balance += play_round(balance)
+        spin = input("Press enter to bet \n(q to quit).")
+        if spin.lower() == "q":
+            break
+        net_slot_change = play_round(balance) 
+        balance += net_slot_change
     print(f"You plundered a total of \n     ${balance} \n thank you for playing!\n GAMBLE RESPONSIBLY! ")
 
 main()
