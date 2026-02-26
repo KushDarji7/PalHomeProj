@@ -1,9 +1,15 @@
 import random
 
-# slot machine, 3 in a row matches, 3x3
+'''
+slot machine, 3 in a row matches, 3x3
+constant value of lines in slot machine/
+or rows of char that cycle in slot machine
+'''
 
-# constant value of lines in slot machine/
-# or rows of char that cycle in slot machine
+"""
+    CONFIGURATION
+"""
+
 MAX_LINES = 3
 MAX_BET = 100
 MIN_BET = 1
@@ -15,10 +21,34 @@ symbol_count = {"🍑": 2, "🃏": 3, "💣": 6, "🍒": 8}
 
 symbol_value = {"🍑": 5, "🃏": 4, "💣": 3, "🍒": 2}
 
+LINE_MULTIPLIER = {
+        1: 1,
+        2: 1.5,
+        3: 2
+    }
 
-def check_winnings(columns, lines, bet, values):
+BASE_JACKPOT = 1000
+# 5% of each bet goes into the jackpot, which can be won by hitting 3 🍑 in a row
+JACKPOT_CONTRIBUTION = 0.05 
+
+"""
+        PROBABILITY CALCULATIONS
+"""
+
+def weighted_spin( symbols):
+    return random.choices(
+        population = list(symbols.keys()),
+        weights = list(symbols.values())
+    )[0]
+
+"""
+        WIN CALCULATIONS
+"""
+
+def check_winnings(columns, lines, bet, values, jackpot):
     winnings = 0
     winning_lines = []
+    
     # if one line is betted, each row will be checked dynamically per number of lines being betted on
     for line in range(lines):
         # going down the first column, then second, then third, and so on until the number of lines being betted on is reached
@@ -38,8 +68,14 @@ def check_winnings(columns, lines, bet, values):
 
     return winnings, winning_lines
 
-
-# GENERATE  what symbols will be in cols
+def get_slot_machine_spin(rows, cols, symbols):
+    columns = []
+    for _ in range(cols):
+        column = [weighted_spin(symbols) for _ in range(rows)]
+        columns.append(column)
+    return columns
+'''
+GENERATE  what symbols will be in cols
 def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
     for symbol, symbol_count in symbols.items():
@@ -63,6 +99,23 @@ def get_slot_machine_spin(rows, cols, symbols):
         columns.append(column)
 
     return columns
+'''
+
+"""
+        RTP / HOUSE EDGE CALCULATIONS
+"""
+
+def calculate_rtp(symbols_count, symbol_values):
+    total_weight = sum(symbol_count.values())
+    rtp = 0
+
+    for symbol, weight in symbol_count.items():
+        probability_one = weight / total_weight
+        probability_three = probability_one ** 3
+        payout = symbol_values[symbol]
+        rtp += probability_three * payout
+    
+    return rtp
 
 
 def print_slots_machine(columns):
